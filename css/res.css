@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1140px)  {
+    .navbar, .nav-list {
+        flex-direction: column;
+        height: 440px;
+        transition: all 0.5s ease-out;
+    }
+    .rightnav {
+        text-align: center;
+        
+        
+    }
+    #se {
+       width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav {
+        height: 70px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .sec {
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .text-sm {
+        text-align: center;
+
+    }
+    .buttons {
+        text-align: center;
+    }
+    .paras{ 
+        padding: 0;
+    }
+}

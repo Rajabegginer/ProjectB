@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+display: flex;
+position: sticky;
+top: 0;
+align-items: center;
+justify-content:center ;
+cursor: pointer;
+
+}
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+}
+.nav-list li {
+    list-style: none;
+    padding: 25px 30px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.nav-list li a:hover {
+    color: gray;
+}
+.bg {
+    background: rgba(0, 0, 0, 0.5) url(../img/pic3.jpg);
+    background-size:cover ;
+    background-blend-mode: darken;
+    
+}
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: 28%;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.rightnav {
+    text-align: right;
+    width: 30%;
+    padding: 0 20px;
+}
+
+#se {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+.firstsection {
+    height: 100vh;
+}
+
+.firsthalf {
+display: flex;
+width: 80%;
+justify-content: center;
+flex-direction: column;
+}
+.secondhalf {
+width: 30%;
+}
+
+.secondhalf img{
+    width: 80%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big {
+font-size: 40px;
+}
+
+.text-sm{
+font-size: 18px;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+.paras {
+    padding: 0 60px;
+}
+
+.secleft {
+    flex-direction: row-reverse;
+}
+.secp1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 16px 0;
+}
+
+.thumbnail img {
+width: 300px;
+border: 2px solid gray;
+border-radius: 25px;
+}
+
+.contact {
+    background-color: rgb(241, 244, 247);
+    height: 750px;
+}
+
+.txtcenter {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.form{
+    max-width: 70%;
+    margin:15px auto;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 18px 0;
+    padding: 5px 12px;
+}
+
+.darkbtn {
+    color: gray;
+    border: 2px solid gray;
+}
+
+.txt-footer {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+.burger {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 5%;
+    display: none;
+    }
+    .line {
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 3px;
+    }
+
+
+@media only screen and (max-width: 1140px)  {
+    .navbar, .nav-list {
+        flex-direction: column;
+        height: 440px;
+        transition: all 0.5s ease-out;
+    }
+    .rightnav {
+        text-align: center;
+        
+        
+    }
+    #search {
+       width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .h-nav {
+        height: 70px;
+    }
+    .visibility {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .box-main {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+
+    .sec {
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .text-sm {
+        text-align: center;
+
+    }
+    .buttons {
+        text-align: center;
+    }
+    .paras{ 
+        padding: 0;
+    }
+}
+
+
+
